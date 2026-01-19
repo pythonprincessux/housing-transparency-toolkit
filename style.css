@@ -1,0 +1,136 @@
+/* =============== */
+/* Base + Reset    */
+/* =============== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.55;
+  color: #111;
+  background: #fff;
+}
+
+/* Accessibility helpers */
+:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+}
+
+/* =============== */
+/* Layout          */
+/* =============== */
+.container {
+  width: min(1000px, calc(100% - 2rem));
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+header.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.site-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+nav.site-nav {
+  padding-bottom: 1rem;
+}
+
+nav.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav.site-nav a {
+  display: inline-block;
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #e5e5e5;
+}
+
+nav.site-nav a:hover {
+  background: #f6f6f6;
+}
+
+nav.site-nav a[aria-current="page"] {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+p { max-width: 70ch; }
+
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .grid.two { grid-template-columns: 1fr 1fr; }
+  .grid.three { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+ul, ol { padding-left: 1.25rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.6rem 0.5rem;
+  vertical-align: top;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 2rem;
+  padding: 1rem 0;
