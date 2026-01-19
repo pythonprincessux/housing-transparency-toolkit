@@ -1,7 +1,6 @@
 # housing-transparency-toolkit
 Student-facing mini-site that improves housing search transparency with a cost/fee checklist, platform comparison, and accessibility-first design. Built for GIT 215 Honors Enrichment Contract.
 # Housing Transparency Toolkit
-
 A student-first, plain-language mini-site that helps students and early-career renters understand the **true monthly cost** of housing, spot **hidden fees**, and compare **listing disclosure patterns** across major platforms.
 
 ## Live Site
