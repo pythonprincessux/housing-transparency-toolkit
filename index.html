@@ -4,37 +4,75 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Housing Transparency Toolkit</title>
-  <meta name="description" content="A student-facing toolkit to compare housing listings, reveal true monthly cost, and reduce hidden-fee surprises." />
+  <meta name="description" content="A student-facing toolkit to estimate true housing costs, identify hidden fees, and compare listing transparency across platforms." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Housing Transparency Toolkit</h1>
-    <p>A student-first guide to understanding true monthly cost, fees, requirements, and timelines.</p>
-    <nav>
-      <a href="checklist.html">Checklist</a> |
-      <a href="comparison.html">Platform Comparison</a> |
-      <a href="accessibility.html">Accessibility & Plain Language</a> |
-      <a href="resources.html">Resources</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Housing Transparency Toolkit</h1>
+      <p class="lede">
+        A student-first guide to understanding <strong>true monthly cost</strong>, <strong>move-in fees</strong>,
+        <strong>eligibility requirements</strong>, and <strong>timelines</strong>—in plain language.
+      </p>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="checklist.html">Checklist</a>
+        <a href="comparison.html">Platform Comparison</a>
+        <a href="accessibility.html">Accessibility & Plain Language</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>What this is</h2>
-    <p>
-      This mini-site is built for students and early-career renters navigating high-stakes housing decisions.
-      It focuses on transparency (what you’ll really pay), clarity (what you must qualify for), and accessibility.
-    </p>
+  <main id="main" class="container">
+    <section class="card">
+      <h2>What this is</h2>
+      <p>
+        This mini-site supports students and early-career renters making high-stakes housing decisions.
+        It focuses on transparency (what you’ll really pay), clarity (what you must qualify for), and accessibility
+        (information that is readable, navigable, and usable for more people).
+      </p>
+    </section>
 
-    <h2>Start here</h2>
-    <ol>
-      <li>Use the <strong>Checklist</strong> to capture true monthly cost and required steps.</li>
-      <li>Review the <strong>Platform Comparison</strong> (Zillow vs Apartments.com) for disclosure patterns.</li>
-      <li>See <strong>Accessibility & Plain Language</strong> improvements for clearer information design.</li>
-    </ol>
+    <section class="card">
+      <h2>How to use the toolkit</h2>
+      <ol>
+        <li>
+          Start with the <a href="checklist.html"><strong>Checklist</strong></a> to estimate true monthly cost and your move-in total.
+        </li>
+        <li>
+          Use the <a href="comparison.html"><strong>Platform Comparison</strong></a> to see how Zillow and Apartments.com disclose fees and requirements.
+        </li>
+        <li>
+          Review <a href="accessibility.html"><strong>Accessibility & Plain Language</strong></a> to see how design choices improve clarity.
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Honors method: transparency rubric (0–3)</h2>
+      <p>
+        To keep the comparison consistent and repeatable, platforms are scored using a simple rubric:
+        <strong>0</strong> = missing/unclear, <strong>1</strong> = partial, <strong>2</strong> = mostly clear, <strong>3</strong> = clear and easy to find.
+      </p>
+      <p class="note">
+        This helps move beyond “it feels confusing” into documented findings and actionable recommendations.
+      </p>
+      <p>
+        Ready? Go straight to the <a href="checklist.html"><strong>Checklist</strong></a>.
+      </p>
+    </section>
   </main>
 
-  <footer>
-    <p>Built by Kiara McRae • GIT 215 Honors Enrichment Contract • Spring 2026</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built by Kiara McRae • GIT 215 Honors Enrichment Contract • Spring 2026</p>
+    </div>
   </footer>
 </body>
 </html>
