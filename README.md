@@ -4,7 +4,7 @@ Student-facing mini-site that improves housing search transparency with a cost/f
 A student-first, plain-language mini-site that helps students and early-career renters understand the **true monthly cost** of housing, spot **hidden fees**, and compare **listing disclosure patterns** across major platforms.
 
 ## Live Site
-(Insert your GitHub Pages link here once enabled)
+[(https://pythonprincessux.github.io/housing-transparency-toolkit/)
 
 ## Why this project
 Housing search is a high-stakes decision system. When cost details and requirements are unclear, people waste time, money, and application fees—and can miss deadlines or sign leases without understanding the full picture. This toolkit focuses on **clarity, transparency, and accessibility**.
