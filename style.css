@@ -21,6 +21,24 @@ body {
   outline-offset: 3px;
 }
 
+/* Skip link (keyboard users) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
 /* =============== */
 /* Layout          */
 /* =============== */
@@ -130,7 +148,24 @@ th, td {
   vertical-align: top;
 }
 
+/* Helpful callouts for “Honors” clarity */
+.note {
+  border-left: 4px solid #111;
+  padding: 0.75rem 0.9rem;
+  background: #fafafa;
+  border-radius: 12px;
+  max-width: 80ch;
+}
+
+/* Small text utility */
+.small {
+  font-size: 0.92rem;
+  color: #444;
+}
+
+/* Footer */
 footer {
   border-top: 1px solid #e5e5e5;
   margin-top: 2rem;
   padding: 1rem 0;
+}
