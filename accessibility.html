@@ -1,1 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Housing Transparency Toolkit • Accessibility & Plain Language</title>
+  <meta name="description" content="Accessibility and plain-language design decisions used to improve housing information clarity and decision reliability." />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">
+        <h1>Housing Transparency Toolkit</h1>
+        <span class="badge">Accessibility & Plain Language</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="comparison.html">Platform Comparison</a></li>
+          <li><a href="accessibility.html" aria-current="page">Accessibility & Plain Language</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <section class="card">
+      <h2>Why accessibility matters in housing information</h2>
+      <p>
+        Housing decisions are high-stakes: renters may spend application fees, commit to leases, or miss deadlines based on the
+        information provided (or not provided). When listings are hard to navigate, written in unclear language, or inconsistent
+        across pages, it increases decision errors—especially for first-time renters, students, and people using assistive technology.
+      </p>
+      <div class="note">
+        <strong>Design goal:</strong> improve clarity and navigation so that more users can reliably find the same information,
+        compare options fairly, and avoid preventable financial harm.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Accessibility features implemented (what this site does)</h2>
+      <ul>
+        <li><strong>Semantic page structure:</strong> headings follow a clear hierarchy (one <code>&lt;h1&gt;</code> per page, then <code>&lt;h2&gt;</code> sections).</li>
+        <li><strong>Landmarks:</strong> consistent <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> regions to support screen-reader navigation.</li>
+        <li><strong>Skip link:</strong> keyboard users can jump directly to main content.</li>
+        <li><strong>Keyboard navigation support:</strong> all links and interactive elements are usable without a mouse.</li>
+        <li><strong>Visible focus states:</strong> <code>:focus-visible</code> styling makes it clear where the keyboard is on the page.</li>
+        <li><strong>Descriptive navigation:</strong> links use meaningful text (e.g., “Platform Comparison” instead of “Click here”).</li>
+        <li><strong>Readable layout:</strong> consistent spacing, line-height, and content width to reduce visual fatigue.</li>
+      </ul>
+      <p class="small">
+        Note: If images are added (e.g., screenshots for evidence), they should include descriptive <code>alt</code> text that explains what the user should learn from the image.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Plain-language design decisions (clarity over jargon)</h2>
+      <p>
+        Housing listings often use terms that assume experience (e.g., “prorated,” “admin fee,” “screening criteria,” “holding fee”).
+        This site uses plain-language best practices to reduce confusion and help users compare information consistently.
+      </p>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>What we did</h3>
+          <ul>
+            <li>Short sentences and clear section labels.</li>
+            <li>Concrete definitions for common terms in a mini glossary.</li>
+            <li>Action-oriented questions (“Ask for a written cost breakdown”).</li>
+            <li>Tables to standardize information capture across listings.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Why it matters</h3>
+          <ul>
+            <li>Reduces misunderstandings and missed requirements.</li>
+            <li>Helps users compare listings fairly.</li>
+            <li>Supports decision reliability when timelines are tight (school start, internships, lease endings).</li>
+            <li>Improves usability for readers with different literacy levels or cognitive load constraints.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Mini self-audit checklist (how this site was verified)</h2>
+      <p class="small">
+        This lightweight audit documents basic accessibility and clarity checks used during development.
+      </p>
+
+      <table aria-label="Accessibility and clarity self-audit">
+        <thead>
+          <tr>
+            <th scope="col">Check</th>
+            <th scope="col">What to verify</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Keyboard navigation</strong></td>
+            <td>Tab through all links in order; ensure nothing is trapped or skipped.</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Visible focus</strong></td>
+            <td>Focused element is clearly outlined with <code>:focus-visible</code>.</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Skip link</strong></td>
+            <td>Skip link appears on focus and jumps to main content.</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Headings</strong></td>
+            <td>One <code>&lt;h1&gt;</code> per page; headings descend logically.</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Tables</strong></td>
+            <td>Tables use <code>&lt;th&gt;</code> headers and clear labels/captions (when needed).</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Plain language</strong></td>
+            <td>Key terms defined; directions are clear; unnecessary jargon removed.</td>
+            <td>Pass / Needs work</td>
+          </tr>
+          <tr>
+            <td><strong>Responsive layout</strong></td>
+            <td>Content remains readable on mobile (no horizontal scrolling).</td>
+            <td>Pass / Needs work</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        <strong>Honors note:</strong> Documenting checks is part of responsible design—especially when the content affects financial decisions.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How this supports housing transparency</h2>
+      <p>
+        Accessibility and plain language are not “nice extras.” They change who can access information and how reliably people can use it.
+        When cost and eligibility details are easier to find, renters can compare options earlier, ask better questions, and avoid
+        wasting application fees on listings that do not meet their constraints.
+      </p>
+      <p class="small">
+        In short: clearer information design improves decision quality.
+      </p>
+    </section>
+
+    <footer>
+      <p class="small">
+        Next: see <a href="comparison.html">Platform Comparison</a> for rubric-based scoring and recommendations.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
