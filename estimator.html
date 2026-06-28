@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>True-Cost Estimator | Housing Transparency Toolkit</title>
+  <meta name="description" content="A proof-of-concept interface that helps renters estimate the true monthly and move-in costs of housing." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">
+        <h1>Housing Transparency Toolkit</h1>
+        <span class="badge">Barrett Honors Thesis • Human Systems Engineering</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the Research</a></li>
+          <li><a href="standard.html">Housing Transparency Standard</a></li>
+          <li><a href="rubric.html">Transparency Rubric</a></li>
+          <li><a href="failure-modes.html">Failure Mode Catalog</a></li>
+          <li><a href="estimator.html" aria-current="page">True-Cost Estimator</a></li>
+          <li><a href="toolkit.html">Toolkit</a></li>
+          <li><a href="findings.html">Research Findings</a></li>
+          <li><a href="author.html">About the Author</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <section class="card hero">
+      <h2>True-Cost Estimator</h2>
+
+      <p>
+        The True-Cost Estimator is a proof-of-concept design developed from the findings of this research.
+        Rather than focusing only on advertised rent, the estimator combines recurring housing expenses,
+        move-in costs, and qualification information into one simplified interface.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Why it was developed</h2>
+
+      <p>
+        Participants frequently underestimated the true cost of rental housing because mandatory fees,
+        parking costs, utilities, and deposits were disclosed separately across listing pages.
+      </p>
+
+      <p>
+        The True-Cost Estimator demonstrates how these expenses can be consolidated into a single
+        decision-support tool that helps renters compare apartments more accurately before applying.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Interactive True-Cost Calculator</h2>
+
+      <p>
+        Enter the estimated monthly costs listed by a property to calculate the true monthly housing obligation.
+        This tool is a working prototype of the decision-support concept proposed in the research.
+      </p>
+
+      <form class="calculator" id="costCalculator">
+        <label for="rent">
+          Monthly Rent
+          <input type="number" id="rent" value="1650" min="0" />
+        </label>
+
+        <label for="parking">
+          Parking Fee
+          <input type="number" id="parking" value="150" min="0" />
+        </label>
+
+        <label for="pet">
+          Pet Rent
+          <input type="number" id="pet" value="0" min="0" />
+        </label>
+
+        <label for="technology">
+          Technology Fee
+          <input type="number" id="technology" value="45" min="0" />
+        </label>
+
+        <label for="utilities">
+          Utilities
+          <input type="number" id="utilities" value="125" min="0" />
+        </label>
+
+        <label for="other">
+          Other Monthly Fees
+          <input type="number" id="other" value="25" min="0" />
+        </label>
+
+        <div class="result-box">
+          <h3>True Monthly Cost</h3>
+          <p id="monthlyTotal">$1,995</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Move-In Cost Estimator</h2>
+
+      <p>
+        Use this section to estimate the amount a renter may need before moving in.
+      </p>
+
+      <form class="calculator" id="moveInCalculator">
+        <label for="applicationFee">
+          Application Fee
+          <input type="number" id="applicationFee" value="75" min="0" />
+        </label>
+
+        <label for="adminFee">
+          Administrative Fee
+          <input type="number" id="adminFee" value="250" min="0" />
+        </label>
+
+        <label for="deposit">
+          Security Deposit
+          <input type="number" id="deposit" value="500" min="0" />
+        </label>
+
+        <label for="firstMonth">
+          First Month's Rent
+          <input type="number" id="firstMonth" value="1650" min="0" />
+        </label>
+
+        <label for="otherMoveIn">
+          Other Move-In Costs
+          <input type="number" id="otherMoveIn" value="0" min="0" />
+        </label>
+
+        <div class="result-box">
+          <h3>Estimated Move-In Total</h3>
+          <p id="moveInTotal">$2,475</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Qualification Checker Concept</h2>
+
+      <p>
+        This section demonstrates how a future housing transparency tool could help renters understand whether they may
+        meet a property's basic qualification requirements before paying an application fee.
+      </p>
+
+      <form class="calculator" id="qualificationChecker">
+        <label for="monthlyIncome">
+          Monthly Income
+          <input type="number" id="monthlyIncome" value="6000" min="0" />
+        </label>
+
+        <label for="requiredRent">
+          Monthly Rent Requirement
+          <input type="number" id="requiredRent" value="1650" min="0" />
+        </label>
+
+        <label for="incomeMultiple">
+          Required Income Multiple
+          <input type="number" id="incomeMultiple" value="3" min="0" step="0.1" />
+        </label>
+
+        <div class="result-box">
+          <h3>Estimated Qualification Status</h3>
+          <p id="qualificationResult">Likely qualifies based on income.</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Design Features</h2>
+
+      <ul>
+        <li>Displays the true estimated monthly housing cost instead of advertised rent alone.</li>
+        <li>Summarizes all required recurring fees in one location.</li>
+        <li>Calculates estimated move-in costs before application.</li>
+        <li>Presents qualification requirements using clear, accessible language.</li>
+        <li>Supports easier comparison between rental listings.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Future Implementation</h2>
+
+      <p>
+        Although presented as a prototype, the True-Cost Estimator could be expanded into a full web application capable
+        of calculating total monthly housing obligations using listing-specific information entered by renters or provided
+        by housing platforms.
+      </p>
+
+      <p>
+        The prototype demonstrates one possible human-centered design response to the transparency challenges identified
+        throughout this research.
+      </p>
+    </section>
+
+    <footer>
+      <p>Built by Kiara McRae • Barrett Honors Thesis • Arizona State University • 2026</p>
+    </footer>
+
+  </main>
+
+  <script>
+    const monthlyInputs = document.querySelectorAll("#costCalculator input");
+    const monthlyTotal = document.getElementById("monthlyTotal");
+
+    function calculateMonthlyTotal() {
+      let total = 0;
+
+      monthlyInputs.forEach(input => {
+        total += Number(input.value) || 0;
+      });
+
+      monthlyTotal.textContent = total.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+      });
+    }
+
+    monthlyInputs.forEach(input => {
+      input.addEventListener("input", calculateMonthlyTotal);
+    });
+
+    calculateMonthlyTotal();
+
+    const moveInInputs = document.querySelectorAll("#moveInCalculator input");
+    const moveInTotal = document.getElementById("moveInTotal");
+
+    function calculateMoveInTotal() {
+      let total = 0;
+
+      moveInInputs.forEach(input => {
+        total += Number(input.value) || 0;
+      });
+
+      moveInTotal.textContent = total.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+      });
+    }
+
+    moveInInputs.forEach(input => {
+      input.addEventListener("input", calculateMoveInTotal);
+    });
+
+    calculateMoveInTotal();
+
+    const monthlyIncome = document.getElementById("monthlyIncome");
+    const requiredRent = document.getElementById("requiredRent");
+    const incomeMultiple = document.getElementById("incomeMultiple");
+    const qualificationResult = document.getElementById("qualificationResult");
+
+    function checkQualification() {
+      const income = Number(monthlyIncome.value) || 0;
+      const rent = Number(requiredRent.value) || 0;
+      const multiple = Number(incomeMultiple.value) || 0;
+      const requiredIncome = rent * multiple;
+
+      if (income >= requiredIncome) {
+        qualificationResult.textContent = "Likely qualifies based on income.";
+      } else {
+        qualificationResult.textContent = "May not qualify based on income requirement.";
+      }
+    }
+
+    monthlyIncome.addEventListener("input", checkQualification);
+    requiredRent.addEventListener("input", checkQualification);
+    incomeMultiple.addEventListener("input", checkQualification);
+
+    checkQualification();
+  </script>
+
+</body>
+</html>
