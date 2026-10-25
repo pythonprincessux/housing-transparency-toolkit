@@ -1,115 +1,247 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Failure Mode Catalog | Housing Transparency Toolkit</title>
-<meta content="A catalog of common transparency failures in online rental housing listings." name="description"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research-aligned catalog of transparency failure modes in online rental housing listings.">
+  <title>Failure Mode Catalog | Housing Transparency Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Readable catalog cards within the burgundy hero */
+    .failure-catalog .grid article {
+      background: #fffdf8;
+      color: #30131f;
+    }
+
+    .failure-catalog .grid article h3 {
+      color: #741638;
+    }
+
+    .failure-catalog .grid article p,
+    .failure-catalog .grid article strong {
+      color: #30131f;
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header">
-<div class="container">
-<div class="site-title">
-<h1>Housing Transparency Toolkit</h1>
-<span class="badge">Barrett Honors Thesis • Human Systems Engineering</span>
-</div>
-<nav aria-label="Primary" class="site-nav">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About the Research</a></li>
-<li><a href="standard.html">Housing Transparency Standard</a></li>
-<li><a href="rubric.html">Transparency Rubric</a></li>
-<li><a aria-current="page" href="failure-modes.html">Failure Mode Catalog</a></li>
-<li><a href="estimator.html">True-Cost Estimator</a></li>
-<li><a href="toolkit.html">Toolkit</a></li>
-<li><a href="findings.html">Research Findings</a></li>
-<li><a href="author.html">About the Author</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<main class="container" id="main">
-<section class="card hero"><h2>Failure Mode Catalog — Research Version</h2><p>These five codes correspond to the coded artifact dataset and the thesis findings. Examples illustrate the definitions and are not independent observations of specific listings.</p><div class="grid"><article><h3>FMC-101: Price Decoupling</h3><p>Advertised rent is separated from required recurring charges, making the primary displayed price incomplete for monthly budgeting.</p><p><strong>Illustrative example:</strong> Base rent appears before mandatory parking, trash, or technology charges.</p><p><strong>Decision risk:</strong> A renter may underestimate recurring housing obligations.</p></article><article><h3>FMC-102: Qualification Gating</h3><p>Income, credit, guarantor, or screening requirements are not readily visible before an application decision.</p><p><strong>Illustrative example:</strong> Qualification criteria are revealed only after a separate inquiry or later step.</p><p><strong>Decision risk:</strong> A renter may spend time or application fees on an unsuitable listing.</p></article><article><h3>FMC-103: Concession Masking</h3><p>A temporary promotion is emphasized without equally clear explanation of the ongoing, nonpromotional cost.</p><p><strong>Illustrative example:</strong> A free-month offer is displayed more prominently than the regular monthly obligation.</p><p><strong>Decision risk:</strong> A renter may anchor on promotional pricing and misjudge longer-term affordability.</p></article><article><h3>FMC-104: Information Fragmentation</h3><p>Decision-relevant costs and conditions are distributed across multiple sections, pages, or documents.</p><p><strong>Illustrative example:</strong> Rent, deposits, utilities, and eligibility appear in different locations.</p><p><strong>Decision risk:</strong> A renter must search, remember, and reconcile information.</p></article><article><h3>FMC-105: Utility Ambiguity</h3><p>Responsibility for utilities or expected utility costs is absent, vague, or not estimated.</p><p><strong>Illustrative example:</strong> A listing says utilities vary without giving a usable estimate or range.</p><p><strong>Decision risk:</strong> A renter cannot confidently estimate total recurring costs.</p></article></div><p><strong>Observed in the exploratory 40-artifact dataset:</strong> FMC-101 28/40 (70%); FMC-102 34/40 (85%); FMC-103 28/40 (70%); FMC-104 40/40 (100%); FMC-105 38/40 (95%). Codes overlap; these are descriptive sample counts, not platform-wide prevalence estimates.</p></section>
-<section class="card">
-<h2>Purpose</h2>
-<p>
-        In human systems engineering, failure modes help identify where a system breaks down for users. In this project,
-        the system is the online rental search process. The renter is expected to evaluate affordability, eligibility,
-        and housing fit, but the information needed to make those decisions is not always presented clearly.
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">
+        <h1>Housing Transparency Toolkit</h1>
+        <span class="badge">
+          Barrett Honors Thesis • Human Systems Engineering
+        </span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the Research</a></li>
+          <li><a href="standard.html">Housing Transparency Standard</a></li>
+          <li><a href="rubric.html">Transparency Rubric</a></li>
+          <li>
+            <a href="failure-modes.html" aria-current="page">
+              Failure Mode Catalog
+            </a>
+          </li>
+          <li><a href="estimator.html">True-Cost Estimator</a></li>
+          <li><a href="toolkit.html">Toolkit</a></li>
+          <li><a href="findings.html">Research Findings</a></li>
+          <li><a href="author.html">About the Author</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+
+    <section class="card hero">
+      <h2>Failure Mode Catalog</h2>
+      <p>
+        Five recurring transparency problems identified through
+        comparative analysis of 40 online rental listing artifacts.
+        These definitions correspond to the research dataset.
       </p>
-<p>
-        This catalog translates observed listing problems into a structured taxonomy that can support evaluation,
-        redesign, and future research.
+    </section>
+
+    <section class="card">
+      <h2>Purpose</h2>
+      <p>
+        In human systems engineering, failure modes describe
+        conditions that can interfere with successful system use.
+        This catalog identifies information-presentation problems
+        that may affect renters' ability to evaluate affordability,
+        eligibility, and housing options.
       </p>
-</section>
-<section class="card">
-<h2>Catalog</h2>
-<div class="grid">
-<article>
-<h3>FMC-101: Price Decoupling</h3>
-<p>
-            Advertised rent is presented separately from mandatory recurring fees, causing the displayed price to appear
-            lower than the renter's likely monthly obligation.
-          </p>
-<p><strong>Example:</strong> A listing advertises $1,650 rent but separates parking, trash, technology, and utility fees.</p>
-<p><strong>Risk:</strong> Renters may underestimate monthly costs when comparing listings.</p>
-</article>
-<article>
-<h3>FMC-102: Qualification Gating</h3>
-<p>
-            Income, credit, guarantor, or screening requirements are hidden until late in the rental process.
-          </p>
-<p><strong>Example:</strong> A renter does not see the income requirement until after beginning an application.</p>
-<p><strong>Risk:</strong> Renters may pay application fees for units they are unlikely to qualify for.</p>
-</article>
-<article>
-<h3>FMC-103: Concession Masking</h3>
-<p>
-            Temporary promotions or discounts are emphasized more strongly than the long-term recurring cost of the unit.
-          </p>
-<p><strong>Example:</strong> “One month free” is visually prominent, while the actual post-concession rent is less clear.</p>
-<p><strong>Risk:</strong> Renters may misjudge affordability after the promotional period ends.</p>
-</article>
-<article>
-<h3>FMC-104: Fee Fragmentation</h3>
-<p>
-            Required fees are scattered across multiple pages, expandable sections, documents, or leasing steps.
-          </p>
-<p><strong>Example:</strong> Application fees, parking fees, utility fees, and deposits appear in different locations.</p>
-<p><strong>Risk:</strong> Renters must do extra work to calculate total cost accurately.</p>
-</article>
-<article>
-<h3>FMC-105: Information Overload</h3>
-<p>
-            Important housing information is technically available but buried in dense text, long documents, or visually cluttered layouts.
-          </p>
-<p><strong>Example:</strong> Fee details are included in a long leasing document without a clear summary.</p>
-<p><strong>Risk:</strong> Renters may miss critical information even when it is disclosed.</p>
-</article>
-</div>
-</section>
-<section class="card">
-<h2>Connection to the Housing Transparency Standard</h2>
-<p>
-        Each failure mode reflects a breakdown in one or more layers of the Housing Transparency Standard.
-        For example, price decoupling and fee fragmentation are failures of financial transparency, while qualification gating
-        is a failure of eligibility transparency.
+      <p>
+        Each failure mode includes a definition, an illustrative
+        example, and a potential decision risk. Examples explain
+        the categories rather than document additional observations.
       </p>
-</section>
-<section class="card">
-<h2>Design implication</h2>
-<p>
-        Reducing these failure modes requires more than adding information to a page. Housing platforms should summarize
-        total monthly cost, upfront move-in cost, and qualification requirements in a way that supports renter decision-making
-        before the application process begins.
+    </section>
+
+    <section class="card failure-catalog">
+      <h2>Research Failure Modes</h2>
+
+      <div class="grid">
+
+        <article>
+          <h3>FMC-101: Price Decoupling</h3>
+          <p>
+            Advertised rent is separated from required recurring
+            charges, making the displayed price incomplete for
+            monthly budgeting.
+          </p>
+          <p>
+            <strong>Illustrative example:</strong>
+            Base rent appears before mandatory parking, trash,
+            or technology charges.
+          </p>
+          <p>
+            <strong>Decision risk:</strong>
+            A renter may underestimate recurring housing costs.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-102: Qualification Gating</h3>
+          <p>
+            Income, credit, guarantor, or screening requirements
+            are not readily visible before an application decision.
+          </p>
+          <p>
+            <strong>Illustrative example:</strong>
+            Qualification criteria appear only after a separate
+            inquiry or later step.
+          </p>
+          <p>
+            <strong>Decision risk:</strong>
+            A renter may spend time or application fees on
+            an unsuitable listing.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-103: Concession Masking</h3>
+          <p>
+            A temporary promotion is emphasized without equally
+            clear explanation of the ongoing, nonpromotional cost.
+          </p>
+          <p>
+            <strong>Illustrative example:</strong>
+            A free-month offer is more prominent than the
+            regular monthly obligation.
+          </p>
+          <p>
+            <strong>Decision risk:</strong>
+            A renter may misjudge longer-term affordability.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-104: Information Fragmentation</h3>
+          <p>
+            Decision-relevant costs and conditions are distributed
+            across multiple sections, pages, or documents.
+          </p>
+          <p>
+            <strong>Illustrative example:</strong>
+            Rent, deposits, utilities, and eligibility
+            information appear in different locations.
+          </p>
+          <p>
+            <strong>Decision risk:</strong>
+            A renter must search for, remember, and reconcile
+            information from several sources.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-105: Utility Ambiguity</h3>
+          <p>
+            Responsibility for utilities or expected utility costs
+            is absent, vague, or not estimated.
+          </p>
+          <p>
+            <strong>Illustrative example:</strong>
+            A listing states that utilities vary without
+            providing a usable estimate or range.
+          </p>
+          <p>
+            <strong>Decision risk:</strong>
+            A renter cannot confidently estimate total
+            recurring housing costs.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Findings From the Artifact Dataset</h2>
+      <p>
+        The exploratory dataset included 40 rental listing records
+        from Apartments.com, Zillow, Redfin, and Apartment List.
+        The following counts describe only those collected records.
       </p>
-</section>
-<footer>
-<p>Built by Kiara McRae • Barrett Honors Thesis • Arizona State University • 2026</p>
-</footer>
-</main>
+
+      <ul>
+        <li>FMC-101 — Price Decoupling: 28 of 40 (70%)</li>
+        <li>FMC-102 — Qualification Gating: 34 of 40 (85%)</li>
+        <li>FMC-103 — Concession Masking: 28 of 40 (70%)</li>
+        <li>FMC-104 — Information Fragmentation: 40 of 40 (100%)</li>
+        <li>FMC-105 — Utility Ambiguity: 38 of 40 (95%)</li>
+      </ul>
+
+      <p>
+        Multiple failure modes could occur within the same listing.
+        These descriptive findings should not be interpreted as
+        estimates of their prevalence across rental platforms
+        or the broader housing market.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Connection to the Housing Transparency Standard</h2>
+      <p>
+        The failure modes identify problems that the proposed
+        Housing Transparency Standard seeks to address.
+        Price Decoupling and Utility Ambiguity concern financial
+        cost clarity. Qualification Gating concerns eligibility
+        disclosure. Concession Masking concerns pricing over time,
+        while Information Fragmentation concerns the accessibility
+        and organization of decision-relevant information.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Design Implications</h2>
+      <p>
+        The findings informed the proposed True-Cost Estimator
+        and related design recommendations. These concepts
+        emphasize consolidated recurring costs, upfront
+        move-in expenses, and earlier communication of
+        qualification requirements.
+      </p>
+      <p>
+        The prototype illustrates a possible design response.
+        Its effectiveness in reducing renter decision errors
+        has not been established through controlled testing.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Built by Kiara McRae • Barrett Honors Thesis •
+        Arizona State University • 2026
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
