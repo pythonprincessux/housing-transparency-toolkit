@@ -420,3 +420,19 @@ footer {
 .table-scroll{overflow-x:auto;max-width:100%;}
 .table-scroll table{min-width:720px;}
 .table-scroll th,.table-scroll td{vertical-align:top;}
+
+
+/* Keep text readable inside white cards on burgundy hero sections */
+.hero .grid article {
+  background: #fffdf8;
+  color: #30131f;
+}
+
+.hero .grid article h3 {
+  color: #741638;
+}
+
+.hero .grid article p,
+.hero .grid article strong {
+  color: #30131f;
+}
