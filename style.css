@@ -416,3 +416,7 @@ footer {
     border-radius: 18px;
   }
 }
+/* Research rubric: preserve readability on narrow screens */
+.table-scroll{overflow-x:auto;max-width:100%;}
+.table-scroll table{min-width:720px;}
+.table-scroll th,.table-scroll td{vertical-align:top;}
