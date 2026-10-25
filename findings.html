@@ -1,117 +1,249 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Research Findings | Housing Transparency Toolkit</title>
-<meta content="Key research findings from the Housing Transparency Toolkit thesis project." name="description"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research findings from a 40-listing exploratory analysis of online rental housing transparency.">
+  <title>Research Findings | Housing Transparency Toolkit</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header">
-<div class="container">
-<div class="site-title">
-<h1>Housing Transparency Toolkit</h1>
-<span class="badge">Barrett Honors Thesis • Human Systems Engineering</span>
-</div>
-<nav aria-label="Primary" class="site-nav">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About the Research</a></li>
-<li><a href="standard.html">Housing Transparency Standard</a></li>
-<li><a href="rubric.html">Transparency Rubric</a></li>
-<li><a href="failure-modes.html">Failure Mode Catalog</a></li>
-<li><a href="estimator.html">True-Cost Estimator</a></li>
-<li><a href="toolkit.html">Toolkit</a></li>
-<li><a aria-current="page" href="findings.html">Research Findings</a></li>
-<li><a href="author.html">About the Author</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<main class="container" id="main">
-<section class="card hero">
-<h2>Research Findings</h2>
-<p>
-        This page summarizes the key findings from the Housing Transparency Toolkit research project.
-        The findings show how hidden costs, fragmented information, and unclear qualification requirements
-        can affect renter decision-making.
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">
+        <h1>Housing Transparency Toolkit</h1>
+        <span class="badge">
+          Barrett Honors Thesis • Human Systems Engineering
+        </span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the Research</a></li>
+          <li><a href="standard.html">Housing Transparency Standard</a></li>
+          <li><a href="rubric.html">Transparency Rubric</a></li>
+          <li><a href="failure-modes.html">Failure Mode Catalog</a></li>
+          <li><a href="estimator.html">True-Cost Estimator</a></li>
+          <li><a href="toolkit.html">Toolkit</a></li>
+          <li>
+            <a href="findings.html" aria-current="page">
+              Research Findings
+            </a>
+          </li>
+          <li><a href="author.html">About the Author</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+
+    <section class="card hero">
+      <h2>Research Findings</h2>
+      <p>
+        This study examined the presentation of financial and
+        eligibility information in 40 online rental listing
+        artifacts. The analysis identified recurring disclosure
+        problems that may complicate renters' financial decisions.
       </p>
-</section>
-<section class="card">
-<h2>Finding 1: Advertised rent does not always reflect true monthly cost</h2>
-<p>
-        Rental listings often emphasize base rent while separating mandatory monthly fees such as parking,
-        utilities, trash, technology, amenity, or pet-related charges.
+    </section>
+
+    <section class="card">
+      <h2>Dataset Overview</h2>
+      <p>
+        The exploratory, nonprobability sample included 40
+        rental listing records from four platforms:
       </p>
-<p>
-        This creates a gap between the price renters first see and the amount they may actually owe each month.
+      <ul>
+        <li>Apartments.com: 9 listings</li>
+        <li>Zillow: 18 listings</li>
+        <li>Redfin: 10 listings</li>
+        <li>Apartment List: 3 listings</li>
+      </ul>
+      <p>
+        The recorded transparency classifications were:
       </p>
-</section>
-<section class="card">
-<h2>Finding 2: Fee information is often fragmented</h2>
-<p>
-        Cost information may appear across several parts of a listing, including expandable menus,
-        application pages, fee disclosures, leasing documents, or third-party property websites.
+      <ul>
+        <li>Low transparency: 24 listings (60%)</li>
+        <li>Moderate transparency: 13 listings (32.5%)</li>
+        <li>High transparency: 3 listings (7.5%)</li>
+      </ul>
+      <p>
+        These results describe the collected sample only.
+        They are not representative estimates of the broader
+        rental housing market or individual platforms.
       </p>
-<p>
-        This makes comparison harder because renters must manually gather and calculate costs from multiple locations.
+    </section>
+
+    <section class="card">
+      <h2>Recurring Transparency Failure Modes</h2>
+      <p>
+        Five categories were documented in the dataset.
+        A single listing could exhibit multiple failure modes.
       </p>
-</section>
-<section class="card">
-<h2>Finding 3: Qualification requirements are not always visible early enough</h2>
-<p>
-        Income, credit, guarantor, and screening requirements are not always presented before renters begin the
-        application process.
+
+      <div class="grid">
+        <article>
+          <h3>FMC-101: Price Decoupling</h3>
+          <p><strong>28 of 40 listings (70%)</strong></p>
+          <p>
+            Advertised rent was separated from required
+            recurring charges.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-102: Qualification Gating</h3>
+          <p><strong>34 of 40 listings (85%)</strong></p>
+          <p>
+            Eligibility or screening requirements were
+            not readily visible before an application decision.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-103: Concession Masking</h3>
+          <p><strong>28 of 40 listings (70%)</strong></p>
+          <p>
+            Temporary promotional pricing was not accompanied
+            by equally clear ongoing-cost information.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-104: Information Fragmentation</h3>
+          <p><strong>40 of 40 listings (100%)</strong></p>
+          <p>
+            Decision-relevant information was distributed
+            across multiple locations or documents.
+          </p>
+        </article>
+
+        <article>
+          <h3>FMC-105: Utility Ambiguity</h3>
+          <p><strong>38 of 40 listings (95%)</strong></p>
+          <p>
+            Utility responsibility or expected utility
+            costs were unclear or insufficiently estimated.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Key Interpretations</h2>
+
+      <h3>1. Advertised rent may not communicate total monthly cost</h3>
+      <p>
+        The documented price-decoupling pattern indicates
+        that renters may need to combine base rent with
+        additional recurring charges to estimate monthly
+        housing expenses.
       </p>
-<p>
-        When eligibility information is delayed, renters may spend time or money applying for housing they may not qualify for.
+
+      <h3>2. Financial information is frequently fragmented</h3>
+      <p>
+        Information fragmentation was recorded in all 40
+        sampled artifacts. This pattern highlights the
+        potential burden of locating and reconciling
+        information across multiple disclosure locations.
       </p>
-</section>
-<section class="card">
-<h2>Finding 4: Participants preferred summarized cost information</h2>
-<p>Participant-session observations are not used as formal findings here pending institutional research-oversight clarification.</p>
-<p>
-        This finding informed the True-Cost Estimator prototype, which demonstrates how recurring expenses can be presented
-        as a single estimated monthly obligation.
+
+      <h3>3. Qualification information may appear too late</h3>
+      <p>
+        Qualification gating was recorded in 34 listings.
+        Earlier disclosure of eligibility requirements
+        could help renters identify unsuitable options
+        before committing application time or fees.
       </p>
-</section>
-<section class="card">
-<h2>Finding 5: Transparency supports better comparison</h2>
-<p>
-        When listings clearly disclose fees, utilities, deposits, and qualification criteria, renters can compare options
-        more accurately.
+
+      <h3>4. Utility uncertainty limits cost predictability</h3>
+      <p>
+        Utility ambiguity was recorded in 38 listings.
+        Clear responsibility statements and available
+        estimates could support more complete budgeting.
       </p>
-<p>
-        Transparent listings reduce the cognitive burden placed on renters and support more informed financial decisions.
+
+      <h3>5. Promotional pricing requires temporal context</h3>
+      <p>
+        Concession masking was recorded in 28 listings.
+        Distinguishing promotional terms from ongoing
+        payment obligations is important when comparing
+        housing options over time.
       </p>
-</section>
-<section class="card">
-<h2>Design implications</h2>
-<ul>
-<li>Rental platforms should display true monthly cost near advertised rent.</li>
-<li>Required fees should be summarized before application.</li>
-<li>Qualification requirements should be visible before renters submit personal information.</li>
-<li>Move-in costs should be separated from recurring monthly costs.</li>
-<li>Plain language summaries should be used for complex leasing information.</li>
-</ul>
-</section>
-<section class="card">
-<h2>How the findings shaped the toolkit</h2>
-<p>
-        The research findings directly informed the Housing Transparency Standard, Transparency Evaluation Rubric,
-        Failure Mode Catalog, True-Cost Estimator, and renter-facing checklist.
+    </section>
+
+    <section class="card">
+      <h2>How the Findings Informed the Toolkit</h2>
+      <p>
+        The observed disclosure patterns informed a set
+        of proposed design responses:
       </p>
-<p>
-        Together, these tools translate the study's findings into practical resources for evaluating and improving
-        rental housing transparency.
+      <ul>
+        <li>
+          Present recurring housing charges alongside
+          advertised base rent.
+        </li>
+        <li>
+          Distinguish one-time move-in expenses from
+          recurring monthly obligations.
+        </li>
+        <li>
+          Make qualification requirements visible earlier.
+        </li>
+        <li>
+          Explain promotional terms and ongoing prices.
+        </li>
+        <li>
+          Consolidate essential financial information
+          into a more accessible format.
+        </li>
+      </ul>
+      <p>
+        These recommendations are illustrated through the
+        Housing Transparency Standard, Transparency Evaluation
+        Rubric, Failure Mode Catalog, and True-Cost Estimator.
+        The prototype demonstrates a design concept, not
+        a validated intervention.
       </p>
-</section>
-<footer>
-<p>Built by Kiara McRae • Barrett Honors Thesis • Arizona State University • 2026</p>
-</footer>
-<section class="card"><h2>Dataset and interpretation</h2><p>The analysis covers 40 exploratory rental artifacts: Apartments.com (9), Zillow (18), Redfin (10), and Apartment List (3). Twenty-four were classified low transparency, 13 moderate, and three high. These classifications and failure-mode counts describe the recorded sample; they are not representative estimates for rental platforms overall. The underlying workbook records overall rubric scores but not the nine individual criterion ratings.</p></section></main>
+    </section>
+
+    <section class="card">
+      <h2>Methodological Boundaries</h2>
+      <p>
+        The Transparency Evaluation Rubric contains nine
+        criteria scored from 0 to 3, with a maximum total
+        of 27 points. The retained workbook records overall
+        scores but does not preserve the nine individual
+        criterion-level ratings. Accordingly, criterion-level
+        subscores cannot be independently reconstructed
+        from the retained data.
+      </p>
+      <p>
+        The study did not establish inter-rater reliability
+        or demonstrate that the proposed toolkit improves
+        renter decisions through controlled testing.
+        The results are descriptive and exploratory.
+      </p>
+      <p>
+        Preliminary session observations are not presented
+        as formal participant findings while their
+        research-oversight status remains unresolved.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Built by Kiara McRae • Barrett Honors Thesis •
+        Arizona State University • 2026
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
